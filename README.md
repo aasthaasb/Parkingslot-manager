@@ -21,7 +21,7 @@ Connect the Components: Set up the PYNQ Z2 board, breadboard, LEDs, switches, an
 
 Write Verilog Code: Implement the logic in Verilog to read the input from switches, count the number of occupied slots, and display the count on the seven-segment display.
 
-Synthesize and Implement: Use Vivado or any other FPGA synthesis tool to synthesize the Verilog code and implement it on the PYNQ Z2 board.
+Synthesize and Implement: Use Vivado  to synthesize the Verilog code and implement it on the PYNQ Z2 board.
 
 Test the System: Test the system by toggling the switches to simulate occupied and empty slots. Verify that the count displayed on the seven-segment display matches the actual number of occupied slots.
 
