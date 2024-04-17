@@ -1,6 +1,4 @@
-# Parkingslot-manager 🚗🅿️
-
-## Car Park Occupied Slot Counting System
+## Car Park Occupied Slot Counting System🚗🅿️
 Welcome to the Car Park Occupied Slot Counting System GitHub repository! In this project, we'll learn how to implement a parking slot system using the PYNQ Z2 board, seven-segment display, wires, and a breadboard.
 
 ### Overview:
