@@ -1,36 +1,36 @@
-## Car Park Occupied Slot Counting System🚗🅿️
-Welcome to the Car Park Occupied Slot Counting System GitHub repository! In this project, we'll learn how to implement a parking slot system using the PYNQ Z2 board, seven-segment display, wires, and a breadboard.
+# Parking Slot Management System
 
-### Overview:
-Imagine a car park with 15 slots, and we want to know how many of these slots are occupied at any given time. To achieve this, we'll use sensors placed over each slot. These sensors will output a logic level of 1 when the slot is occupied and 0 when it's empty. We'll use switches on the PYNQ Z2 board to simulate these sensors.
+## Introduction
+This Verilog project simulates a parking slot management system. While in real-life scenarios, sensors would detect entry and exit of vehicles, this mini demo project employs buttons to simulate entry and exit events. Upon entry, the number of free parking slots decreases, and upon exit, it increases.
 
-The system will then count the number of occupied slots and display the count using LEDs and a seven-segment display.
+## Features
+- Simulates parking slot management.
+- Allows for entry and exit of vehicles using buttons.
+- Displays the number of free parking slots.
 
-### Components Needed
-PYNQ Z2 board
-Breadboard
-Wires
-Seven-segment display
-LEDs
-Switches
+## Components
+The project consists of the following components:
+1. **Entry Button:** Simulates the entry of a vehicle into the parking lot. Pressing this button decrements the number of free slots.
+2. **Exit Button:** Simulates the exit of a vehicle from the parking lot. Pressing this button increments the number of free slots.
+3. **Free Slots Counter:** Keeps track of the number of available parking slots on a SSD.
 
-### Implementation Steps
-Connect the Components: Set up the PYNQ Z2 board, breadboard, LEDs, switches, and seven-segment display according to the circuit diagram provided in the project files.
+## Usage
+1. **Simulation Environment:**
+    - Ensure that you have a Verilog simulation environment set up (e.g., Vivado).
+    - Compile the Verilog files using the appropriate commands.
 
-Write Verilog Code: Implement the logic in Verilog to read the input from switches, count the number of occupied slots, and display the count on the seven-segment display.
+2. **Running the Simulation:**
+    - Start the simulation in your Verilog simulation environment.
+    - Simulate the entry and exit of vehicles by pressing the Entry and Exit buttons accordingly.
+    - Observe the changes in the number of free parking slots.
 
-Synthesize and Implement: Use Vivado  to synthesize the Verilog code and implement it on the PYNQ Z2 board.
+## Example
+Here's a basic example of how to use the system:
+1. Start the simulation.
+2. Initially, set the free parking slots.
+3. Press the Entry button to simulate a vehicle entering the parking lot.
+4. The number of free slots decreases by 1.
+5. Press the Exit button to simulate a vehicle exiting the parking lot.
+6. The number of free slots increases by 1.
+7. Repeat steps 3-6 to simulate more vehicles entering
 
-Test the System: Test the system by toggling the switches to simulate occupied and empty slots. Verify that the count displayed on the seven-segment display matches the actual number of occupied slots.
-
-### Project Structure
-verilog_code: Contains the Verilog code for the parking slot system.
-images: Includes images of the circuit diagram and setup.
-docs: Additional documentation and resources.
-
-### Getting Started
-To get started with this project, follow these steps:
-Clone this repository to your local machine.
-Set up the hardware components as per the circuit diagram provided.
-Load the Verilog code onto the PYNQ Z2 board.
-Test the system by toggling the switches and observing the count on the seven-segment display.
